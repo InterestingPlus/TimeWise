@@ -1,0 +1,435 @@
+{
+  "BCA": {
+    "Semester 1": {
+      "A": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "C", "teacher": "PDP" },
+          "tuesday": { "subject": "C", "teacher": "PDP" },
+          "wednesday": { "subject": "C", "teacher": "PDP" },
+          "thursday": { "subject": "OFFICE", "teacher": "NBV" },
+          "friday": { "subject": "OFFICE", "teacher": "NBV" },
+          "saturday": { "subject": "OFFICE", "teacher": "NBV" }
+        },
+        {
+          "time": "8:55-9:50",
+          "monday": { "subject": "FCO", "teacher": "SVK" },
+          "tuesday": { "subject": "FCO", "teacher": "SVK" },
+          "wednesday": { "subject": "FCO", "teacher": "SVK" },
+          "thursday": { "subject": "FCO", "teacher": "SVK" },
+          "friday": { "subject": "H.COM", "teacher": "MKB" },
+          "saturday": { "subject": "H.COM", "teacher": "MKB" }
+        },
+        {
+          "time": "9:50-10:40",
+          "monday": { "subject": "C", "teacher": "PDP" },
+          "tuesday": { "subject": "C", "teacher": "PDP" },
+          "wednesday": { "subject": "C", "teacher": "PDP" },
+          "thursday": { "subject": "C", "teacher": "PDP" },
+          "friday": { "subject": "SPORTS", "teacher": "" },
+          "saturday": { "subject": "SPORTS", "teacher": "" }
+        },
+        {
+          "time": "10:40-11:10",
+          "monday": null,
+          "tuesday": null,
+          "wednesday": null,
+          "thursday": null,
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "11:10-12:05",
+          "monday": { "subject": "OFFICE", "teacher": "NBV" },
+          "tuesday": { "subject": "OFFICE", "teacher": "NBV" },
+          "wednesday": { "subject": "OFFICE", "teacher": "NBV" },
+          "thursday": { "subject": "OFFICE", "teacher": "NBV" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "12:05-1:00",
+          "monday": { "subject": "MATH", "teacher": "VJ" },
+          "tuesday": { "subject": "MATH", "teacher": "VJ" },
+          "wednesday": { "subject": "MATH", "teacher": "VJ" },
+          "thursday": { "subject": "MATH", "teacher": "VJ" },
+          "friday": { "subject": "EDP", "teacher": "AGV" },
+          "saturday": { "subject": "EDP", "teacher": "AGV" }
+        },
+        {
+          "time": "1:00-1:55",
+          "monday": null,
+          "tuesday": null,
+          "wednesday": { "subject": "ENG", "teacher": "KR" },
+          "thursday": { "subject": "ENG", "teacher": "KR" },
+          "friday": null,
+          "saturday": null
+        }
+      ],
+
+      "B": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "OFFICE", "teacher": "NBV" },
+          "tuesday": { "subject": "OFFICE", "teacher": "NBV" },
+          "wednesday": { "subject": "OFFICE", "teacher": "NBV" },
+          "thursday": { "subject": "C", "teacher": "PDP" },
+          "friday": { "subject": "C", "teacher": "PDP" },
+          "saturday": { "subject": "C", "teacher": "PDP" }
+        },
+        {
+          "time": "8:55-9:50",
+          "monday": { "subject": "H.COM", "teacher": "MKB" },
+          "tuesday": { "subject": "H.COM", "teacher": "MKB" },
+          "wednesday": { "subject": "EDP", "teacher": "NBV" },
+          "thursday": { "subject": "EDP", "teacher": "NBV" },
+          "friday": { "subject": "FCO", "teacher": "SVK" },
+          "saturday": { "subject": "FCO", "teacher": "SVK" }
+        },
+        {
+          "time": "9:50-10:40",
+          "monday": { "subject": "OFFICE", "teacher": "NBV" },
+          "tuesday": { "subject": "OFFICE", "teacher": "NBV" },
+          "wednesday": { "subject": "OFFICE", "teacher": "NBV" },
+          "thursday": { "subject": "OFFICE", "teacher": "NBV" },
+          "friday": { "subject": "FCO", "teacher": "SVK" },
+          "saturday": { "subject": "FCO", "teacher": "SVK" }
+        },
+        {
+          "time": "10:40-11:10",
+          "monday": null,
+          "tuesday": null,
+          "wednesday": null,
+          "thursday": null,
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "11:10-12:05",
+          "monday": { "subject": "C", "teacher": "PDP" },
+          "tuesday": { "subject": "C", "teacher": "PDP" },
+          "wednesday": { "subject": "C", "teacher": "PDP" },
+          "thursday": { "subject": "C", "teacher": "PDP" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "12:05-1:00",
+          "monday": { "subject": "ENG", "teacher": "KR" },
+          "tuesday": { "subject": "ENG", "teacher": "KR" },
+          "wednesday": { "subject": "SPORTS", "teacher": "" },
+          "thursday": { "subject": "SPORTS", "teacher": "" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "1:00-1:55",
+          "monday": { "subject": "MATH", "teacher": "VJ" },
+          "tuesday": { "subject": "MATH", "teacher": "VJ" },
+          "wednesday": { "subject": "MATH", "teacher": "VJ" },
+          "thursday": { "subject": "MATH", "teacher": "VJ" },
+          "friday": null,
+          "saturday": null
+        }
+      ],
+
+      "C": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "C", "teacher": "PDP" },
+          "tuesday": { "subject": "C", "teacher": "PDP" },
+          "wednesday": { "subject": "DFS", "teacher": "AGV" },
+          "thursday": { "subject": "JAVA", "teacher": "PMP" },
+          "friday": { "subject": "JAVA", "teacher": "PMP" },
+          "saturday": { "subject": "JAVA", "teacher": "PMP" }
+        },
+        {
+          "time": "8:55-9:50",
+          "monday": { "subject": "MM", "teacher": "MIG" },
+          "tuesday": { "subject": "MM", "teacher": "MIG" },
+          "wednesday": { "subject": "MM", "teacher": "MIG" },
+          "thursday": { "subject": "MM", "teacher": "MIG" },
+          "friday": { "subject": "MM", "teacher": "MIG" },
+          "saturday": { "subject": "MM", "teacher": "MIG" }
+        },
+        {
+          "time": "9:50-10:40",
+          "monday": { "subject": "MM", "teacher": "MIG" },
+          "tuesday": { "subject": "ENG", "teacher": "KR" },
+          "wednesday": { "subject": "PHOTO", "teacher": "MKB" },
+          "thursday": { "subject": "PHOTO", "teacher": "MKB" },
+          "friday": { "subject": "DFS", "teacher": "AGV" },
+          "saturday": { "subject": "DFS", "teacher": "AGV" }
+        },
+        {
+          "time": "10:40-11:10",
+          "monday": { "subject": "MM", "teacher": "MIG" },
+          "tuesday": { "subject": "ENG", "teacher": "KR" },
+          "wednesday": { "subject": "PHOTO", "teacher": "MKB" },
+          "thursday": { "subject": "PHOTO", "teacher": "MKB" },
+          "friday": { "subject": "DFS", "teacher": "AGV" },
+          "saturday": { "subject": "DFS", "teacher": "AGV" }
+        },
+        {
+          "time": "11:10-12:05",
+          "monday": { "subject": "MM", "teacher": "MIG" },
+          "tuesday": { "subject": "OS", "teacher": "VNS" },
+          "wednesday": { "subject": "OS", "teacher": "VNS" },
+          "thursday": { "subject": "OS", "teacher": "VNS" },
+          "friday": { "subject": "OS", "teacher": "VNS" },
+          "saturday": { "subject": "OS", "teacher": "VNS" }
+        },
+        {
+          "time": "12:05-1:00",
+          "monday": { "subject": "LUNCH", "teacher": "" },
+          "tuesday": { "subject": "LUNCH", "teacher": "" },
+          "wednesday": { "subject": "LUNCH", "teacher": "" },
+          "thursday": { "subject": "LUNCH", "teacher": "" },
+          "friday": { "subject": "LUNCH", "teacher": "" },
+          "saturday": { "subject": "LUNCH", "teacher": "" }
+        },
+        {
+          "time": "1:00-1:55",
+          "monday": { "subject": "C++", "teacher": "VMM" },
+          "tuesday": { "subject": "C++", "teacher": "VMM" },
+          "wednesday": { "subject": "C++", "teacher": "VMM" },
+          "thursday": { "subject": "C++", "teacher": "VMM" },
+          "friday": null,
+          "saturday": { "subject": "C++", "teacher": "VMM" }
+        }
+      ]
+    },
+
+    "Semester 3": {
+      "A": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "C++", "teacher": "VMM" },
+          "tuesday": { "subject": "C++", "teacher": "VMM" },
+          "wednesday": { "subject": "C++", "teacher": "VMM" },
+          "thursday": { "subject": "DFS", "teacher": "AGV" },
+          "friday": { "subject": "DFS", "teacher": "AGV" },
+          "saturday": { "subject": "DFS", "teacher": "AGV" }
+        },
+        {
+          "time": "8:55-9:50",
+          "monday": { "subject": "MM", "teacher": "MIG" },
+          "tuesday": { "subject": "MM", "teacher": "MIG" },
+          "wednesday": { "subject": "MM", "teacher": "MIG" },
+          "thursday": { "subject": "MM", "teacher": "MIG" },
+          "friday": { "subject": "IKS", "teacher": "NBV" },
+          "saturday": { "subject": "IKS", "teacher": "NBV" }
+        },
+        {
+          "time": "9:50-10:40",
+          "monday": { "subject": "OS", "teacher": "VNS" },
+          "tuesday": { "subject": "OS", "teacher": "VNS" },
+          "wednesday": { "subject": "OS", "teacher": "VNS" },
+          "thursday": { "subject": "OS", "teacher": "VNS" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "10:40-11:10",
+          "monday": null,
+          "tuesday": null,
+          "wednesday": null,
+          "thursday": null,
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "11:10-12:05",
+          "monday": { "subject": "ENG", "teacher": "KR" },
+          "tuesday": { "subject": "ENG", "teacher": "KR" },
+          "wednesday": { "subject": "PHOTO", "teacher": "MKB" },
+          "thursday": { "subject": "PHOTO", "teacher": "KR" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "12:05-1:00",
+          "monday": { "subject": "C++", "teacher": "VMM" },
+          "tuesday": { "subject": "C++", "teacher": "VMM" },
+          "wednesday": { "subject": "C++", "teacher": "VMM" },
+          "thursday": { "subject": "C++", "teacher": "VMM" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "1:00-1:55",
+          "monday": { "subject": "DFS", "teacher": "AGV" },
+          "tuesday": { "subject": "DFS", "teacher": "AGV" },
+          "wednesday": { "subject": "DFS", "teacher": "AGV" },
+          "thursday": { "subject": "DFS", "teacher": "AGV" },
+          "friday": null,
+          "saturday": null
+        }
+      ],
+
+      "B": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "DFS", "teacher": "AGV" },
+          "tuesday": { "subject": "DFS", "teacher": "AGV" },
+          "wednesday": { "subject": "DFS", "teacher": "AGV" },
+          "thursday": { "subject": "C++", "teacher": "VMM" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "8:55-9:50",
+          "monday": { "subject": "OS", "teacher": "VNS" },
+          "tuesday": { "subject": "OS", "teacher": "VNS" },
+          "wednesday": { "subject": "OS", "teacher": "VNS" },
+          "thursday": { "subject": "OS", "teacher": "VNS" },
+          "friday": { "subject": "C++", "teacher": "VMM" },
+          "saturday": { "subject": "C++", "teacher": "VMM" }
+        },
+        {
+          "time": "9:50-10:40",
+          "monday": { "subject": "MM", "teacher": "MIG" },
+          "tuesday": { "subject": "MM", "teacher": "MIG" },
+          "wednesday": { "subject": "MM", "teacher": "MIG" },
+          "thursday": { "subject": "MM", "teacher": "MIG" },
+          "friday": { "subject": "IKS", "teacher": "NBV" },
+          "saturday": { "subject": "IKS", "teacher": "NBV" }
+        },
+        {
+          "time": "10:40-11:10",
+          "monday": null,
+          "tuesday": null,
+          "wednesday": null,
+          "thursday": null,
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "11:10-12:05",
+          "monday": { "subject": "PHOTO", "teacher": "MKB" },
+          "tuesday": { "subject": "PHOTO", "teacher": "MKB" },
+          "wednesday": { "subject": "ENG", "teacher": "KR" },
+          "thursday": { "subject": "ENG", "teacher": "KR" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "12:05-1:00",
+          "monday": { "subject": "DFS", "teacher": "AGV" },
+          "tuesday": { "subject": "DFS", "teacher": "AGV" },
+          "wednesday": { "subject": "DFS", "teacher": "AGV" },
+          "thursday": { "subject": "DFS", "teacher": "AGV" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "1:00-1:55",
+          "monday": { "subject": "C++", "teacher": "VMM" },
+          "tuesday": { "subject": "C++", "teacher": "VMM" },
+          "wednesday": { "subject": "C++", "teacher": "VMM" },
+          "thursday": { "subject": "C++", "teacher": "VMM" },
+          "friday": null,
+          "saturday": null
+        }
+      ],
+
+      "C": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "MM", "teacher": "MIG" },
+          "tuesday": { "subject": "MM", "teacher": "MIG" },
+          "wednesday": { "subject": "MM", "teacher": "MIG" },
+          "thursday": { "subject": "MM", "teacher": "MIG" },
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "8:55-9:50",
+          "monday": { "subject": "C++", "teacher": "VMM" },
+          "tuesday": { "subject": "C++", "teacher": "VMM" },
+          "wednesday": { "subject": "C++", "teacher": "VMM" },
+          "thursday": { "subject": "DFS", "teacher": "AGV" },
+          "friday": { "subject": "DFS", "teacher": "AGV" },
+          "saturday": { "subject": "DFS", "teacher": "AGV" }
+        },
+        {
+          "time": "9:50-10:40",
+          "monday": { "subject": "ENG", "teacher": "KR" },
+          "tuesday": { "subject": "ENG", "teacher": "KR" },
+          "wednesday": { "subject": "PHOTO", "teacher": "MKB" },
+          "thursday": { "subject": "PHOTO", "teacher": "MKB" },
+          "friday": { "subject": "DFS", "teacher": "AGV" },
+          "saturday": { "subject": "DFS", "teacher": "AGV" }
+        },
+        {
+          "time": "10:40-11:10",
+          "monday": null,
+          "tuesday": null,
+          "wednesday": null,
+          "thursday": null,
+          "friday": null,
+          "saturday": null
+        },
+        {
+          "time": "11:10-12:05",
+          "monday": { "subject": "OS", "teacher": "VNS" },
+          "tuesday": { "subject": "OS", "teacher": "VNS" },
+          "wednesday": { "subject": "OS", "teacher": "VNS" },
+          "thursday": { "subject": "OS", "teacher": "VNS" },
+          "friday": { "subject": "DFS", "teacher": "AGV" },
+          "saturday": { "subject": "DFS", "teacher": "AGV" }
+        },
+        {
+          "time": "12:05-1:00",
+          "monday": { "subject": "IKS", "teacher": "NBV" },
+          "tuesday": { "subject": "IKS", "teacher": "NBV" },
+          "wednesday": null,
+          "thursday": null,
+          "friday": { "subject": "C++", "teacher": "VMM" },
+          "saturday": { "subject": "C++", "teacher": "VMM" }
+        },
+        {
+          "time": "1:00-1:55",
+          "monday": null,
+          "tuesday": null,
+          "wednesday": null,
+          "thursday": null,
+          "friday": { "subject": "C++", "teacher": "VMM" },
+          "saturday": { "subject": "C++", "teacher": "VMM" }
+        }
+      ]
+    }
+  },
+
+  "BCom": {
+    "Semester 1": {
+      "A": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "Accounts", "teacher": "ABC" },
+          "tuesday": { "subject": "Economics", "teacher": "XYZ" },
+          "wednesday": null,
+          "thursday": null,
+          "friday": null,
+          "saturday": null
+        }
+      ]
+    }
+  },
+
+  "BVOC": {
+    "Semester 1": {
+      "A": [
+        {
+          "time": "8:00-8:55",
+          "monday": { "subject": "Vocational Skill", "teacher": "PQR" },
+          "tuesday": null,
+          "wednesday": null,
+          "thursday": null,
+          "friday": null,
+          "saturday": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "C": "bg-blue-500",
+  "C++": "bg-green-500",
+  "JAVA": "bg-red-500",
+  "OS": "bg-purple-500",
+  "MM": "bg-yellow-500",
+  "MATH": "bg-indigo-500",
+  "ENG": "bg-pink-500",
+  "EDP": "bg-orange-500",
+  "OFFICE": "bg-gray-500",
+  "DFS": "bg-teal-500",
+  "IKS": "bg-cyan-500",
+  "H.COM": "bg-lime-500",
+  "FCO": "bg-fuchsia-500",
+  "CYB.SEC": "bg-rose-500",
+  "DCN": "bg-amber-500",
+  "ORACLE-1": "bg-emerald-500",
+  "PHOTO": "bg-violet-500",
+  "SPORTS": "bg-emerald-700",
+  "LUNCH": "bg-neutral-600",
+  "FREE": "bg-gray-300 text-gray-700",
+  "DEFAULT": "bg-stone-500"
+}
