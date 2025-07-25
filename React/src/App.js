@@ -1,13 +1,8 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
+import "./App.scss"; // Import your Sass file
 
 import ALL_TIMETABLE_DATA from "./timeTable.json";
-
 import SUBJECT_COLORS from "./subjectColor.json";
-
-const getSubjectColor = (subject) => {
-  if (!subject) return SUBJECT_COLORS.FREE;
-  return SUBJECT_COLORS[subject.toUpperCase()] || SUBJECT_COLORS.DEFAULT;
-};
 
 // Helper to get day name from day index (0 = Sunday, 1 = Monday)
 const getDayName = (dayIndex) => {
@@ -182,7 +177,6 @@ function App() {
 
   // Handle day selection for daily timetable view
   const handleDaySelect = (e) => {
-    const selectedDayIndex = new Date(e.target.value).getDay();
     setCurrentDate(new Date(e.target.value));
   };
 
@@ -211,52 +205,30 @@ function App() {
 
   const selectedDayName = getDayName(currentDate.getDay());
 
-  useEffect(() => {
-    // Google Fonts અને Tailwind CSS CDN સ્ક્રિપ્ટો ઉમેરો
-    const link = document.createElement("link");
-    link.href =
-      "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-
-    const tailwindScript = document.createElement("script");
-    tailwindScript.src = "https://cdn.tailwindcss.com";
-    document.head.appendChild(tailwindScript);
-
-    return () => {
-      document.head.removeChild(link);
-      document.head.removeChild(tailwindScript);
-    };
-  }, []);
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-indigo-200 p-4 font-inter text-gray-800">
+    <div className="app-container">
       {/* College Title */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center text-indigo-800 mb-5 drop-shadow-lg">
-        Smt. K.B. Parekh College
-      </h1>
+      <h1 className="college-title">Smt. K.B. Parekh College</h1>
 
-      <h3 className="text-center mb-3">
+      <h3 className="developer-info">
         Developer :{" "}
         <b>
-          <a href="https://jatinporiya.netlify.app" target="_blank">
+          <a
+            href="https://jatinporiya.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Jatin Poriya
           </a>
         </b>
       </h3>
 
       {/* Selection Filters */}
-      <div className="bg-white rounded-xl shadow-lg p-6 mb-8 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div>
-          <label
-            htmlFor="degree-select"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
-            Degree:
-          </label>
+      <div className="selection-filters">
+        <div className="filter-group">
+          <label htmlFor="degree-select">Degree:</label>
           <select
             id="degree-select"
-            className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md shadow-sm"
             value={selectedDegree}
             onChange={(e) => {
               setSelectedDegree(e.target.value);
@@ -291,16 +263,10 @@ function App() {
           </select>
         </div>
 
-        <div>
-          <label
-            htmlFor="semester-select"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
-            Semester:
-          </label>
+        <div className="filter-group">
+          <label htmlFor="semester-select">Semester:</label>
           <select
             id="semester-select"
-            className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md shadow-sm"
             value={selectedSemester}
             onChange={(e) => {
               setSelectedSemester(e.target.value);
@@ -331,16 +297,10 @@ function App() {
           </select>
         </div>
 
-        <div>
-          <label
-            htmlFor="division-select"
-            className="block text-sm font-medium text-gray-700 mb-1"
-          >
-            Division:
-          </label>
+        <div className="filter-group">
+          <label htmlFor="division-select">Division:</label>
           <select
             id="division-select"
-            className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md shadow-sm"
             value={selectedDivision}
             onChange={(e) => setSelectedDivision(e.target.value)}
             disabled={divisions.length === 0}
@@ -359,16 +319,16 @@ function App() {
       </div>
 
       {currentTimetable.length === 0 && (
-        <div className="text-center text-lg text-red-600 font-semibold mt-8">
+        <div className="no-timetable-message">
           No timetable data available for the selected options. Please select a
           valid combination.
         </div>
       )}
 
       {currentTimetable.length > 0 && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="timetable-sections-grid">
           {/* Current and Next Lecture Cards */}
-          <div className="flex flex-col gap-6">
+          <div className="lecture-cards-container">
             <LectureCard
               title="Current Lecture"
               lecture={currentLecture}
@@ -382,20 +342,12 @@ function App() {
           </div>
 
           {/* Day-wise Timetable */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-2xl font-bold text-indigo-700 mb-4">
-              Day-wise Timetable
-            </h2>
-            <div className="mb-4">
-              <label
-                htmlFor="day-select"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Select Day:
-              </label>
+          <div className="day-wise-timetable-section">
+            <h2 className="section-title">Day-wise Timetable</h2>
+            <div className="day-select-container">
+              <label htmlFor="day-select">Select Day:</label>
               <select
                 id="day-select"
-                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md shadow-sm"
                 value={currentDate.toISOString().split("T")[0]}
                 onChange={handleDaySelect}
               >
@@ -417,10 +369,8 @@ function App() {
           </div>
 
           {/* Weekly Timetable */}
-          <div className="lg:col-span-2 bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-2xl font-bold text-indigo-700 mb-4">
-              Complete Weekly Timetable
-            </h2>
+          <div className="weekly-timetable-section">
+            <h2 className="section-title">Complete Weekly Timetable</h2>
             <TimetableTable
               timetable={currentTimetable}
               day="all" // Special value to render all days
@@ -437,34 +387,43 @@ function App() {
 const LectureCard = ({ title, lecture, defaultMessage }) => {
   const isFree =
     lecture && (lecture.subject === "FREE" || lecture.subject === "LUNCH");
-  const cardColorClass = isFree
-    ? "bg-gray-200 border-gray-400"
-    : getSubjectColor(lecture?.subject);
-  const textColorClass = isFree ? "text-gray-800" : "text-white";
-  const borderColorClass = isFree ? "border-gray-400" : "border-current"; // Use current color if not free
+  const cardBackgroundColor = lecture
+    ? SUBJECT_COLORS[lecture.subject.toUpperCase()] || SUBJECT_COLORS.DEFAULT
+    : SUBJECT_COLORS.FREE;
+  const cardTextColor = isFree ? "#4B5563" : "#FFFFFF"; // Adjusted for better contrast on light free background
 
   return (
     <div
-      className={`rounded-xl shadow-md p-6 flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 ${cardColorClass} ${borderColorClass} border-b-4`}
+      className="lecture-card"
+      style={{
+        backgroundColor: cardBackgroundColor,
+        borderColor: isFree ? "#9CA3AF" : cardBackgroundColor, // Border matches background
+      }}
     >
-      <h3 className={`text-xl font-semibold mb-2 ${textColorClass}`}>
+      <h3 className="card-title" style={{ color: cardTextColor }}>
         {title}
       </h3>
       {lecture ? (
         <div>
-          <p className={`text-3xl font-bold ${textColorClass} mb-1`}>
+          <p className="card-subject" style={{ color: cardTextColor }}>
             {lecture.subject}
           </p>
-          <p className={`text-lg italic ${textColorClass}`}>
+          <p className="card-teacher" style={{ color: cardTextColor }}>
             {lecture.teacher ? `Teacher: ${lecture.teacher}` : ""}
           </p>
-          <p className={`text-sm ${textColorClass}`}>{lecture.time}</p>
+          <p className="card-time" style={{ color: cardTextColor }}>
+            {lecture.time}
+          </p>
           {lecture.day && (
-            <p className={`text-sm ${textColorClass}`}>On: {lecture.day}</p>
+            <p className="card-day" style={{ color: cardTextColor }}>
+              On: {lecture.day}
+            </p>
           )}
         </div>
       ) : (
-        <p className={`text-xl italic ${textColorClass}`}>{defaultMessage}</p>
+        <p className="card-default-message" style={{ color: cardTextColor }}>
+          {defaultMessage}
+        </p>
       )}
     </div>
   );
@@ -482,96 +441,92 @@ const TimetableTable = ({ timetable, day }) => {
   ]; // Assuming Sunday is off based on image
 
   return (
-    <div className="overflow-x-auto rounded-lg shadow-inner border border-gray-200">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-indigo-600 text-white">
+    <div className="timetable-table-container">
+      <table className="timetable-table">
+        <thead className="timetable-thead">
           <tr>
-            <th
-              scope="col"
-              className="px-3 py-2 text-left text-xs font-medium uppercase tracking-wider"
-            >
+            <th scope="col" className="timetable-th">
               Time
             </th>
             {day === "all" ? (
               daysOfWeek.map((d) => (
-                <th
-                  key={d}
-                  scope="col"
-                  className="px-3 py-2 text-left text-xs font-medium uppercase tracking-wider"
-                >
+                <th key={d} scope="col" className="timetable-th">
                   {d.charAt(0).toUpperCase() + d.slice(1)}
                 </th>
               ))
             ) : (
-              <th
-                scope="col"
-                className="px-3 py-2 text-left text-xs font-medium uppercase tracking-wider"
-              >
+              <th scope="col" className="timetable-th">
                 {day.charAt(0).toUpperCase() + day.slice(1)}
               </th>
             )}
           </tr>
         </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
+        <tbody className="timetable-tbody">
           {timetable.map((slot, index) => (
             <tr key={index}>
-              <td className="px-3 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
-                {slot.time}
-              </td>
+              <td className="timetable-td timetable-time-cell">{slot.time}</td>
               {day === "all"
                 ? daysOfWeek.map((d) => {
                     const lecture = slot[d];
-                    const bgColor = getSubjectColor(lecture?.subject);
+                    const bgColor = lecture
+                      ? SUBJECT_COLORS[lecture.subject.toUpperCase()] ||
+                        SUBJECT_COLORS.DEFAULT
+                      : SUBJECT_COLORS.FREE;
                     const textColor =
                       lecture &&
                       (lecture.subject === "FREE" ||
                         lecture.subject === "LUNCH")
-                        ? "text-gray-800"
-                        : "text-white";
+                        ? "#4B5563"
+                        : "#FFFFFF";
                     return (
                       <td
                         key={d}
-                        className={`px-3 py-2 whitespace-normal text-sm ${bgColor} ${textColor} rounded-md m-1 transition-all duration-200 ease-in-out`}
+                        className="timetable-cell"
+                        style={{ backgroundColor: bgColor, color: textColor }}
                       >
                         {lecture ? (
                           <>
-                            <div className="font-semibold">
+                            <div className="cell-subject">
                               {lecture.subject}
                             </div>
-                            <div className="text-xs italic">
+                            <div className="cell-teacher">
                               {lecture.teacher}
                             </div>
                           </>
                         ) : (
-                          <div className="font-semibold">FREE</div>
+                          <div className="cell-subject cell-free">FREE</div>
                         )}
                       </td>
                     );
                   })
                 : (() => {
                     const lecture = slot[day];
-                    const bgColor = getSubjectColor(lecture?.subject);
+                    const bgColor = lecture
+                      ? SUBJECT_COLORS[lecture.subject.toUpperCase()] ||
+                        SUBJECT_COLORS.DEFAULT
+                      : SUBJECT_COLORS.FREE;
                     const textColor =
                       lecture &&
                       (lecture.subject === "FREE" ||
                         lecture.subject === "LUNCH")
-                        ? "text-gray-800"
-                        : "text-white";
+                        ? "#4B5563"
+                        : "#FFFFFF";
                     return (
                       <td
-                        className={`px-3 py-2 whitespace-normal text-sm ${bgColor} ${textColor} rounded-md m-1 transition-all duration-200 ease-in-out`}
+                        className="timetable-cell"
+                        style={{ backgroundColor: bgColor, color: textColor }}
                       >
                         {lecture ? (
                           <>
-                            <div className="font-semibold">
+                            <div className="cell-subject">
                               {lecture.subject}
                             </div>
-                            <div className="text-xs italic">
+                            <div className="cell-teacher">
                               {lecture.teacher}
                             </div>
                           </>
                         ) : (
-                          <div className="font-semibold">FREE</div>
+                          <div className="cell-subject cell-free">FREE</div>
                         )}
                       </td>
                     );
