@@ -13,48 +13,28 @@ body {
     #e0f2fe,
     #e0e7ff
   ); /* from-blue-100 to-indigo-200 */
-  padding: 1rem; /* Reduced padding for small screens */
+  padding: 1.5rem;
   font-family: "Inter", sans-serif;
-  color: #4a5568; /* text-gray-800 */
-
-  @media (min-width: 640px) {
-    /* sm breakpoint */
-    padding: 1.5rem; /* p-6 */
-  }
+  color: #4a5568;
 }
 
 /* College Title */
 .college-title {
-  font-size: 2rem; /* Reduced for small screens */
-  font-weight: 800; /* font-extrabold */
+  font-size: 2.5rem;
+  font-weight: 800;
   text-align: center;
-  color: #312e81; /* text-indigo-800 */
-  margin-bottom: 1.5rem; /* mb-8, adjusted */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* drop-shadow-lg, adjusted */
+  color: #312e81;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 
   @media (min-width: 768px) {
-    /* md breakpoint */
-    font-size: 2.5rem; /* text-4xl */
-  }
-
-  @media (min-width: 1024px) {
-    /* lg breakpoint */
-    font-size: 3rem; /* md:text-5xl */
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
   }
 }
 
 .developer-info {
   text-align: center;
-  margin-bottom: 1rem; /* Adjusted for smaller screens */
-  font-size: 0.875rem; /* Smaller font for dev info */
-
-  @media (min-width: 640px) {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-  }
-
+  margin-bottom: 1.5rem;
   a {
     color: #4a5568;
     text-decoration: none;
@@ -67,47 +47,44 @@ body {
 /* Selection Filters */
 .selection-filters {
   background-color: #ffffff;
-  border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
-  padding: 1rem; /* Reduced padding for small screens */
-  margin-bottom: 1.5rem; /* mb-8, adjusted */
-  max-width: 100%; /* Ensure it fits small screens */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem; /* gap-4 */
+  gap: 1rem;
 
   @media (min-width: 768px) {
-    /* md breakpoint */
-    padding: 1.5rem;
-    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
-    max-width: 64rem; /* max-w-4xl */
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .filter-group {
     label {
       display: block;
-      font-size: 0.875rem; /* text-sm */
-      font-weight: 500; /* font-medium */
-      color: #4a5568; /* text-gray-700 */
-      margin-bottom: 0.25rem; /* mb-1 */
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #4a5568;
+      margin-bottom: 0.25rem;
     }
 
     select {
       display: block;
       width: 100%;
-      padding: 0.5rem 2.5rem 0.5rem 0.75rem; /* pl-3 pr-10 py-2 */
-      font-size: 0.875rem; /* Adjusted for smaller screens */
-      border: 1px solid #d1d5db; /* border-gray-300 */
+      padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
       outline: none;
-      border-radius: 0.375rem; /* rounded-md */
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+      border-radius: 0.375rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
       transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
       &:focus {
-        border-color: #6366f1; /* focus:border-indigo-500 */
-        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3); /* focus:ring-indigo-500 */
+        border-color: #6366f1;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
       }
 
       &:disabled {
@@ -116,7 +93,7 @@ body {
       }
 
       @media (min-width: 640px) {
-        font-size: 1rem; /* sm:text-sm */
+        font-size: 0.875rem;
       }
     }
   }
@@ -125,36 +102,28 @@ body {
 /* No Timetable Message */
 .no-timetable-message {
   text-align: center;
-  font-size: 1rem; /* Adjusted for smaller screens */
-  color: #dc2626; /* text-red-600 */
-  font-weight: 600; /* font-semibold */
-  margin-top: 1.5rem; /* mt-8, adjusted */
-
-  @media (min-width: 640px) {
-    font-size: 1.125rem;
-    margin-top: 2rem;
-  }
+  font-size: 1.125rem;
+  color: #dc2626;
+  font-weight: 600;
+  margin-top: 2rem;
 }
 
 /* Timetable Sections Grid */
 .timetable-sections-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem; /* Smaller gap for mobile */
-  max-width: 100%; /* Ensure it fits small screens */
+  gap: 1.5rem;
+  max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: 1024px) {
-    /* lg breakpoint */
-    grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */
-    gap: 1.5rem; /* gap-6 */
-    max-width: 80rem; /* max-w-6xl */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .weekly-timetable-section {
     @media (min-width: 1024px) {
-      grid-column: span 2 / span 2; /* lg:col-span-2 */
+      grid-column: span 2 / span 2;
     }
   }
 }
@@ -163,21 +132,19 @@ body {
 .lecture-cards-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Smaller gap for mobile */
+  gap: 1.5rem;
 
-  @media (min-width: 640px) {
-    gap: 1.5rem;
-  }
+  max-width: 100% !important;
+  overflow: auto;
 }
 
 .lecture-card {
-  border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-  padding: 1rem; /* Reduced padding for small screens */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 8rem; /* Adjusted height for mobile */
   transform: scale(1);
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
@@ -187,55 +154,31 @@ body {
     transform: scale(1.05);
   }
 
-  @media (min-width: 640px) {
-    padding: 1.5rem;
-    height: 10rem;
-  }
-
   .card-title {
-    font-size: 1rem; /* text-xl, adjusted */
-    font-weight: 600; /* font-semibold */
-    margin-bottom: 0.25rem; /* mb-2, adjusted */
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
 
   .card-subject {
-    font-size: 1.5rem; /* text-3xl, adjusted */
-    font-weight: 700; /* font-bold */
-    margin-bottom: 0.125rem; /* mb-1, adjusted */
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
   }
 
   .card-teacher {
-    font-size: 0.875rem; /* text-lg, adjusted */
+    font-size: 1.125rem;
     font-style: italic;
   }
 
   .card-time,
   .card-day {
-    font-size: 0.75rem; /* text-sm, adjusted */
+    font-size: 0.875rem;
   }
 
   .card-default-message {
-    font-size: 1rem; /* text-xl, adjusted */
+    font-size: 1.25rem;
     font-style: italic;
-  }
-
-  @media (min-width: 640px) {
-    .card-title {
-      font-size: 1.25rem;
-    }
-    .card-subject {
-      font-size: 1.875rem;
-    }
-    .card-teacher {
-      font-size: 1.125rem;
-    }
-    .card-time,
-    .card-day {
-      font-size: 0.875rem;
-    }
-    .card-default-message {
-      font-size: 1.25rem;
-    }
   }
 }
 
@@ -243,31 +186,22 @@ body {
 .day-wise-timetable-section,
 .weekly-timetable-section {
   background-color: #ffffff;
-  border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
-  padding: 1rem; /* Reduced padding for small screens */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
 
-  @media (min-width: 640px) {
-    padding: 1.5rem;
-  }
+  max-width: 100%;
+  overflow-x: auto;
 
   .section-title {
-    font-size: 1.25rem; /* text-2xl, adjusted */
-    font-weight: 700; /* font-bold */
-    color: #4338ca; /* text-indigo-700 */
-    margin-bottom: 0.75rem; /* mb-4, adjusted */
-
-    @media (min-width: 640px) {
-      font-size: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 2rem;
-    }
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4338ca;
+    margin-bottom: 1rem;
   }
 
   .day-select-container {
-    margin-bottom: 0.75rem; /* mb-4, adjusted */
+    margin-bottom: 1rem;
     label {
       display: block;
       font-size: 0.875rem;
@@ -279,7 +213,7 @@ body {
       display: block;
       width: 100%;
       padding: 0.5rem 2.5rem 0.5rem 0.75rem;
-      font-size: 0.875rem; /* Adjusted for smaller screens */
+      font-size: 1rem;
       border: 1px solid #d1d5db;
       outline: none;
       border-radius: 0.375rem;
@@ -290,74 +224,56 @@ body {
         border-color: #6366f1;
         box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
       }
-      @media (min-width: 640px) {
-        font-size: 1rem;
-      }
     }
   }
 }
 
 /* Timetable Table */
 .timetable-table-container {
-  overflow-x: auto; /* Enable horizontal scrolling for tables on small screens */
-  border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); /* shadow-inner */
-  border: 1px solid #e2e8f0; /* border border-gray-200 */
+  overflow: -x-auto;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
 }
 
 .timetable-table {
-  min-width: 600px; /* Minimum width to prevent excessive squishing on small screens */
+  min-width: 100%;
   border-collapse: collapse;
   overflow: hidden;
   border-radius: inherit;
 
-  @media (min-width: 768px) {
-    /* md breakpoint */
-    min-width: 100%; /* Allow table to expand on larger screens */
-  }
-
   .timetable-thead {
-    background-color: #4f46e5; /* bg-indigo-600 */
-    color: #ffffff; /* text-white */
+    background-color: #4f46e5;
+    color: #ffffff;
 
     th {
-      padding: 0.5rem; /* px-3 py-2, adjusted */
+      padding: 0.5rem 0.75rem;
       text-align: left;
-      font-size: 0.625rem; /* text-xs, adjusted */
-      font-weight: 500; /* font-medium */
+      font-size: 0.75rem;
+      font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.05em; /* tracking-wider */
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtle border for header cells */
-
-      @media (min-width: 640px) {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.75rem;
-      }
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
   }
 
   .timetable-tbody {
     background-color: #ffffff;
-    border-top: 1px solid #e2e8f0; /* divide-y divide-gray-200 replacement */
+    border-top: 1px solid #e2e8f0;
 
     tr {
       &:nth-child(even) {
-        background-color: #f9fafb; /* light stripe for readability */
+        background-color: #f9fafb;
       }
     }
 
     .timetable-td {
-      padding: 0.5rem; /* px-3 py-2, adjusted */
+      padding: 0.5rem 0.75rem;
       white-space: nowrap;
-      font-size: 0.75rem; /* text-sm, adjusted */
-      font-weight: 500; /* font-medium */
-      color: #1a202c; /* text-gray-900 */
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #1a202c;
       border-bottom: 1px solid #e2e8f0;
-
-      @media (min-width: 640px) {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.875rem;
-      }
     }
 
     .timetable-time-cell {
@@ -369,27 +285,21 @@ body {
     }
 
     .timetable-cell {
-      padding: 0.5rem; /* Adjusted for smaller screens */
+      padding: 0.5rem 0.75rem;
       white-space: normal;
-      font-size: 0.75rem; /* Adjusted for smaller screens */
-      border-radius: 0.25rem; /* rounded-md */
-      margin: 0.125rem; /* m-1, adjusted */
+      font-size: 0.875rem;
+      border-radius: 0.25rem;
+      margin: 0.25rem;
       transition: all 0.2s ease-in-out;
       vertical-align: top; /* Align content to top of cell */
-      line-height: 1.2;
-
-      @media (min-width: 640px) {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.875rem;
-        margin: 0.25rem;
-      }
+      line-height: 1.3;
 
       .cell-subject {
         font-weight: 600;
-        margin-bottom: 0.0625rem; /* Adjusted for smaller screens */
+        margin-bottom: 0.125rem;
       }
       .cell-teacher {
-        font-size: 0.625rem; /* Adjusted for smaller screens */
+        font-size: 0.75rem;
         font-style: italic;
       }
       .cell-free {
@@ -400,5 +310,4 @@ body {
   }
 }
 
-// Basic Font Import (if not already handled globally)
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
